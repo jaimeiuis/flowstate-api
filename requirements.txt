@@ -1,0 +1,42 @@
+# Python web app microframework 
+Flask==0.12
+
+# Flask dependencies
+itsdangerous==1.1.0
+markupsafe==1.1.1
+
+# WSGI HTTP server
+gunicorn==19.4
+
+# WSGI app library
+werkzeug==0.15.5
+
+# HTML templating library for Flask
+jinja2==2.11.3
+
+# Relational databases w/ Python
+SQLAlchemy==1.2.0
+SQLAlchemy-Utils==0.32
+
+# Integrate relational databases into app
+Flask-SQLAlchemy==2.1
+
+# PostgreSQL database adapter in C
+psycopg2==2.8.3
+
+# API / JWT Auth
+flask-classful==0.14
+flask-marshmallow==0.7.0
+marshmallow==2.15.1
+flask-jwt-extended==3.3
+PyJWT==1.7.1
+
+# Testing
+pytest==2.9
+
+# CLI command handling
+Click==6.4
+
+# Extensions
+flask-debugtoolbar==0.10.0
+faker==0.8.7
