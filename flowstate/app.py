@@ -2,12 +2,12 @@ from flask import Flask
 
 from flowstate.blueprints.page import page
 
-from flowstate.extensions import (
-    debug_toolbar,
-    db,
-    jwt,
-    marshmallow
-)
+# from flowstate.extensions import (
+#     debug_toolbar,
+#     db,
+#     jwt,
+#     # marshmallow
+# )
 
 
 def create_app(settings_override=None):
@@ -23,14 +23,14 @@ def create_app(settings_override=None):
 
     app.register_blueprint(page)
     
-    extensions(app)
+    # extensions(app)
 
     return app
 
 
-def extensions(app):
-    """ Mutate the app passed in. """
-    debug_toolbar.init_app(app)
-    jwt.init_app(app)
-    db.init_app(app)
-    marshmallow.init_app(app)
+# def extensions(app):
+#     """ Mutate the app passed in. """
+#     debug_toolbar.init_app(app)
+#     jwt.init_app(app)
+#     db.init_app(app)
+#     # marshmallow.init_app(app)
